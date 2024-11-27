@@ -19,11 +19,11 @@ logging.CRITICAL
 """
 
 logger = logging.getLogger(__name__)
-LOG_LEVEL = logging.DEBUG
+LOG_LEVEL = logging.ERROR
 
 def init_logging():
     logger.debug("in main")
-    logging.basicConfig(filename=__file__ + ".log", level=logging.DEBUG)
+    logging.basicConfig(filename=__file__ + ".log", level=LOG_LEVEL)
 
 def main():
     init_logging()
